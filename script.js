@@ -29,7 +29,7 @@ window.addEventListener('scroll',()=>{
 //-----------------light Mode & dark Mode-------------------
 
 if(localStorage.theme === 'dark' || (!('theme' in localStorage)&& window.
-matchMedia('(perfect-color-scheme: dark)').matches)){
+matchMedia('(prefers-color-scheme: dark)').matches)){
     document.documentElement.classList.add('dark')
 } else {
     document.documentElement.classList.remove('dark')
